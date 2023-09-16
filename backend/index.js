@@ -14,6 +14,10 @@ const OpenAI=require('openai');
 const openai = new OpenAI({
   apiKey: process.env.API_KEY 
 });
+const cors=require('cors');
+app.use(cors({
+  origin:"http://localhost:5173",
+}));
 
 
 app.post("/signup", async (req, res) => {
