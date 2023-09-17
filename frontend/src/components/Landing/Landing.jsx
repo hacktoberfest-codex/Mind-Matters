@@ -65,13 +65,13 @@ function Landing(){
             backgroundColor:"#ffe3ab"
         }}>
             <Typography gutterBottom variant="h6" component="div" display={'flex'} justifyContent={'center'}>
-                <b className='title' onClick={()=>navigate('/')}>More On Mental Health</b>
+                <b className='title' onClick={()=>navigate('/more')}>More On Mental Health</b>
             </Typography>
             <Typography variant="body2" color="text.secondary" style={{width:280,paddingLeft:10}}>
             It will enhance your knowledge and assist you in overcoming 
             the challenges you are currently experiencing.
             </Typography>
-            <img style={{width:300}} className='title' onClick={()=>navigate('/')} src={mh}></img>
+            <img style={{width:300}} className='title' onClick={()=>navigate('/more')} src={mh}></img>
         </Card>   
 
         <Card style={{

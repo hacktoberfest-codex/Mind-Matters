@@ -8,6 +8,7 @@ import Blogs from './components/Blogs/Blogs';
 import BlogsCustom from './components/Blogs/BlogsCustom';
 import Rating from './components/UserRating/Rating';
 import MentalHealthBasic from './components/MentalHealthBasic/MentalHealthBasic';
+import MoreOn from './components/MoreOn/MoreOn';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path='/blogscustom' element={<BlogsCustom/>}/>
       <Route path='/rating' element={<Rating/>}/>
       <Route path='/mentalbasic' element={<MentalHealthBasic/>}/>
+      <Route path='/more' element={<MoreOn/>}/>
     </Routes>
     </Router>
   </div>  
