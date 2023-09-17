@@ -48,13 +48,13 @@ function Landing(){
             backgroundColor:"#ffe3ab"
         }}>
             <Typography gutterBottom variant="h6" component="div" display={'flex'} justifyContent={'center'}>
-                <b className='title' onClick={()=>navigate('/')}>Users Liked These References</b>
+                <b className='title' onClick={()=>navigate('/blogs')}>Users Liked These References</b>
             </Typography>
             <Typography variant="body2" color="text.secondary" style={{width:280,paddingLeft:10}}>
                 Stories that will help you to overcome your struggles and will 
                 motivate you to take action.
             </Typography>
-            <img style={{width:300 , maxHeight:200}} className='title' onClick={()=>navigate('/')} src={reference}></img>
+            <img style={{width:300 , maxHeight:200}} className='title' onClick={()=>navigate('/blogs')} src={reference}></img>
         </Card>   
 
 

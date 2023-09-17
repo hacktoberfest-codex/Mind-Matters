@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './components/Landing/Landing';
 import Login from './components/authentication/login';
 import Signup from './components/authentication/signup';
+import Blogs from './components/Blogs/Blogs';
+import BlogsCustom from './components/Blogs/BlogsCustom';
+import Rating from './components/UserRating/Rating';
 
 function App() {
 
@@ -14,6 +17,9 @@ function App() {
       <Route path='/' element={<Landing/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path='/blogscustom' element={<BlogsCustom/>}/>
+      <Route path='/rating' element={<Rating/>}/>
     </Routes>
     </Router>
   </div>  
