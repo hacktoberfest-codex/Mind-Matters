@@ -10,10 +10,6 @@ const jwt=require('jsonwebtoken');
 const User=require('./db/User');
 const Blogs=require('./db/Blogs');
 const { authenticate,Secret } =require('./middleware/script');
-const OpenAI=require('openai');
-const openai = new OpenAI({
-  apiKey: process.env.API_KEY 
-});
 const cors=require('cors');
 app.use(cors({
   origin:"http://localhost:5173",
@@ -97,15 +93,6 @@ app.post("/updatemood",authenticate,async(req,res)=>{
     m=Math.floor(m/2);
     let b=await User.findOneAndUpdate({name:u},{rating:m})
     res.json({message:"updated mood !"})
-})
-
-app.get('/ai',authenticate,async(req,res)=>{
-    const ques=req.headers.question;
-    const response=await openai.chat.completions.create({
-      model:"gpt-3.5-turbo",
-      messages:[{"role":"user","content":ques}],
-    })
-    res.json({message:response.choices[0].message.content});
 })
 
 app.get("/me",authenticate,async(req,res)=>{

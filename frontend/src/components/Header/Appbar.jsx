@@ -48,9 +48,9 @@ function Appbar(){
                 <div>
                 <Nav className="me-auto">
                 <Button variant="text" onClick={()=>{navigate('/')}} style={{color:"black",marginRight:30}}>Home</Button>
-                <Button variant="text" onClick={()=>{navigate('/')}} style={{color:"black",marginRight:30}}>Mental Health Basics</Button>
+                <Button variant="text" onClick={()=>{navigate('/mentalbasic')}} style={{color:"black",marginRight:30}}>Mental Health Basics</Button>
                 <Button variant="text" href="https://www.psychologytoday.com/us/tests/health/mental-health-assessment" style={{color:"black",marginRight:30}}>Take A Test</Button>
-                <Button variant="text" onClick={()=>{navigate("/")}} style={{color:"black"}}>Chat With AI</Button>
+                
                 </Nav>
                 </div>
                 <div style={{display:"flex",justifyContent:"right"}}>
@@ -88,9 +88,9 @@ function Appbar(){
             <div>
             <Nav>
                 <Button variant="text" onClick={()=>{navigate('/')}} style={{color:"black",marginRight:30}}>Home</Button>
-                <Button variant="text" onClick={()=>{navigate('/')}} style={{color:"black",marginRight:30}}>Mental Health Basics</Button>
+                <Button variant="text" onClick={()=>{navigate('/mentalbasic')}} style={{color:"black",marginRight:30}}>Mental Health Basics</Button>
                 <Button variant="text" href="https://www.psychologytoday.com/us/tests/health/mental-health-assessment" style={{color:"black",marginRight:30}}>Take A Test</Button>
-                <Button variant="text" onClick={()=>{navigate("/")}} style={{color:"black"}}>Chat With AI</Button>  
+                 
             </Nav>
             </div>
             <div>

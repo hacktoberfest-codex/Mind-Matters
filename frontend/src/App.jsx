@@ -7,6 +7,7 @@ import Signup from './components/authentication/signup';
 import Blogs from './components/Blogs/Blogs';
 import BlogsCustom from './components/Blogs/BlogsCustom';
 import Rating from './components/UserRating/Rating';
+import MentalHealthBasic from './components/MentalHealthBasic/MentalHealthBasic';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path='/blogs' element={<Blogs/>}/>
       <Route path='/blogscustom' element={<BlogsCustom/>}/>
       <Route path='/rating' element={<Rating/>}/>
+      <Route path='/mentalbasic' element={<MentalHealthBasic/>}/>
     </Routes>
     </Router>
   </div>  
