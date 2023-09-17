@@ -9,6 +9,7 @@ import BlogsCustom from './components/Blogs/BlogsCustom';
 import Rating from './components/UserRating/Rating';
 import MentalHealthBasic from './components/MentalHealthBasic/MentalHealthBasic';
 import MoreOn from './components/MoreOn/MoreOn';
+import Uploading from './components/Uploading/Uploading';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='/rating' element={<Rating/>}/>
       <Route path='/mentalbasic' element={<MentalHealthBasic/>}/>
       <Route path='/more' element={<MoreOn/>}/>
+      <Route path='/uploading' element={<Uploading/>}/>
     </Routes>
     </Router>
   </div>  

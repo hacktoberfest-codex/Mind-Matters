@@ -81,12 +81,12 @@ function Landing(){
             backgroundColor:"#ffe3ab"
         }}>
             <Typography gutterBottom variant="h6" component="div" display={'flex'} justifyContent={'center'}>
-                <b className='title' onClick={()=>navigate('/')}>Want To Help ?</b>
+                <b className='title' onClick={()=>navigate('/uploading')}>Want To Help ?</b>
             </Typography>
             <Typography variant="body2" color="text.secondary" style={{width:280,paddingLeft:10}}>
                 Upload Blogs, Articles or Video that was helpful for you and and which could help others. 
             </Typography>
-            <img style={{width:300}} className='title' onClick={()=>navigate('/')} src={help}></img>
+            <img style={{width:300}} className='title' onClick={()=>navigate('/uploading')} src={help}></img>
         </Card>
         </div>
 
